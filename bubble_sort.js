@@ -1,11 +1,11 @@
 
 // Khai báo đầu vào
-var arr = [10, 5, 4, 7, 9, 2, 4, 1, 0]
+var arr = [4, 7, 6, 8, 1]
 
 //Hàm sắp xếp
 function sapXep(arr) {
     //Khai báo output
-    output = {
+    let output = {
         status: true / false,
         content: [],
         message: " "
@@ -20,7 +20,7 @@ function sapXep(arr) {
         //Nếu số phần tử trong mảng = 0
         output.status = false
         output.content = []
-        output.message = " Dãy không có phần tử nào"
+        output.message = "Dãy không có phần tử nào"
         return output;
     } else if (validateError(arr)) {
         // Kiểm tra kiểu dữ liệu của dãy
@@ -31,7 +31,7 @@ function sapXep(arr) {
     } else if (arr.length == 1) {
         // Kiểm tra tổng số phần tử có = 1 hay không
         output.status = true
-        output.content = [...arr]
+        output.content = arr
         output.message = "Dãy số đã được sắp xếp"
         return output;
     } else {
