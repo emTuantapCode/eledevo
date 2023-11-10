@@ -83,7 +83,6 @@ public class Main {
 					output.status = true;
 					output.content = arr;
 					output.message = "Dãy đã được sắp xếp";
-					System.out.println("hung");
 				}
 			}
 		}
